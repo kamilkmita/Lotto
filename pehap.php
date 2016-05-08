@@ -1,3 +1,22 @@
-<?php
-echo "<p>Copyright &copy; 1999-" . date("Y") . " W3Schools.com</p>";
+<?php 
+
+
+
+/*$first_step = explode( '<div class="wynik_lotto">' , $content );
+$second_step = explode("</div>" , $first_step[1] );
+
+echo $second_step[0];
+*/
+
+$url = 'http://lotto.pl/';
+$content = file_get_contents($url);
+echo $content;
+
+
 ?>
+
+
+
+
+
+
