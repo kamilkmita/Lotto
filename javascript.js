@@ -15,20 +15,19 @@ for(var i=0;i<6;i++){
 document.getElementById('losowane').innerHTML = wylosowane;
 
 
-
+var object = {
+    name: 'test',
+    caption: 'test2'
+}
 
 $.ajax({
     type: 'POST',
     url: 'losy.json',
-    data: JSON.stringify({ "userName": 'userName', "password" : 'password' }),
+    data: object,
     success: function(data) { alert('data: ' + data); },
+    error: function() { console.log('error -> json'); },
     contentType: "application/json",
     dataType: 'json'
 });
-
-
-
-
-
 
 

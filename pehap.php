@@ -13,6 +13,16 @@ $content = file_get_contents($url);
 echo $content;
 
 
+
+$myfile = fopen("losowania.json", "w") or die("Unable to open file!");
+$txt = "Mickey Mouse\n";
+fwrite($myfile, $txt);
+$txt = "Minnie Mouse\n";
+fwrite($myfile, $txt);
+fclose($myfile);
+
+
+
 ?>
 
 
