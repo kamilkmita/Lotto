@@ -7,6 +7,7 @@
     <title>Arden</title>
   </head>
   <body>
+    <script src="javascript.js"></script>
 
 <style>
 	#content {
@@ -15,9 +16,9 @@
 </style>
 
 
-<h1>losy</h1>
+<h1>Losowanie lotto</h1>
 
-Ostatnie losowanie to : <br><br>
+Ostatnie losowanie to : <br>
 <div id="losowane"></div>
 
 <button onclick="test()">KLICK</button>
@@ -28,7 +29,7 @@ Ostatnie losowanie to : <br><br>
 
 <p><b>Start typing a name in the input field below:</b></p>
 <form> 
-First name: <input type="text" onkeyup="pokaz()">
+First name: <input type="text" onkeyup="showHint(this.value)">
 </form>
 <p>Suggestions: <span id="txtHint"></span></p>
 
@@ -36,17 +37,10 @@ First name: <input type="text" onkeyup="pokaz()">
 <h1>COJESTT</h1>
 
 
-<div id="content"> <?php include 'include.php';?></div>
-
-
-
-
 
 
 <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
 
 <script src="losy.json"></script>
-<script src="javascript.js"></script>
-
   </body>
 </html>
